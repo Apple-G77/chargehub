@@ -61,3 +61,4 @@ Repo **Settings → Pages → Deploy from a branch → main → / (root) → Sav
 4. Open `live-slots.html` in another tab: the slot shows OCCUPIED.
 5. Claim the phone. The slot becomes AVAILABLE and the Logbook shows who claimed it.
 6. Earnings: the total for today matches the logbook.
+ 
