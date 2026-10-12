@@ -1,3 +1,5 @@
+
+Style · CSS
 /* ChargeHub shared styles: used by every page (public and operator). */
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -74,3 +76,9 @@ tr.today td{color:#22C55E;font-weight:700}
 .foot{margin-top:56px;padding-top:24px;border-top:1px solid #23415C}
 .badge{display:inline-block;margin-bottom:24px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Logo */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.logo-big{width:min(260px,60vw);height:auto}
+.nav .lg{display:flex;align-items:center;gap:10px}
+.nav .lg img{border-radius:50%}
