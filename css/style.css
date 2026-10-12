@@ -1,5 +1,3 @@
-
-Style · CSS
 /* ChargeHub shared styles: used by every page (public and operator). */
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
