@@ -1,19 +1,18 @@
 # ChargeHub
 
 A portable phone charging service for Cebu Eastern College students.
-Final project for Event-Driven Programming (PyScript), BSIT 3-7, instructor Mr. Vincent Cababan.
 
 **Members:** Garabiles, Apple Mae D. · Lazarte, Alliah E. · Oacan, Jomar I. · Rollon, Jhunro Niño F. · Villaluz, MaryShien R.
 
 Live site (after enabling GitHub Pages): `https://apple-g77.github.io/chargehub/`
-Video presentation: [add link here]
+
 
 ## What the website does
 
 **Customers (public, no login)**
 | Page | File | What happens |
 |---|---|---|
-| Landing | `index.html` | Logo and the 30-second ad video. The Enter button pulses when the video ends. |
+| Landing | `index.html` | Logo and the advertisement video. The Enter button pulses when the video ends. |
 | Home | `home.html` | Live status card, slot board and today's schedule. |
 | About | `about.html` | Mission, problem, USP, how it works, the team. |
 | Services | `services.html` | Price calculator (button click). |
@@ -54,18 +53,6 @@ Repo **Settings → Pages → Deploy from a branch → main → / (root) → Sav
 2. **The PIN is a "staff only" sign, not real security.** The repo is public, so anyone can read the PIN. Operator pages are only hidden from the menu. A real system would use proper login.
 3. The `Reset all data` button in the Logbook clears everything saved in the browser.
 
-## The video
-Put your 30-second ad at `assets/chargehub-ad.mp4`. GitHub's web upload limit is 25 MB per file (100 MB with git). If it is bigger, compress it.
-
-## Who does what (suggested)
-Each member commits their own files with clear messages, so the history shows everyone's work.
-| Member | Files | Ideas for meaningful commits |
-|---|---|---|
-| Garabiles | `index.html`, `home.html`, `about.html`, `py/landing.py`, `py/home.py` | Add the team roles, polish the landing page, add the real logo |
-| Lazarte | `services.html`, `live-slots.html`, `py/services.py`, `py/live_slots.py` | Add a premium price option, add a "slots available" line to Services |
-| Oacan | `operator/checkin.html`, `operator/logbook.html`, `py/checkin.py`, `py/logbook.py` | Add a condition photo note, add export of the logbook |
-| Rollon | `operator/earnings.html`, `py/earnings.py` | Add a per-month chart, add a break-even line |
-| Villaluz | `find-us.html`, `operator/pin.html`, `operator/schedule.html`, `py/find_us.py`, `py/pin.py`, `py/schedule.py`, `README.md` | Add an FAQ section, improve the PIN page, keep the README current |
 
 ## Quick test checklist
 1. Open `operator/pin.html`, enter the PIN.
