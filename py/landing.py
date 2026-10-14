@@ -1,4 +1,3 @@
-"""Landing page: logo + 30-second advertisement video."""
 from pyscript import document, when
 
 
