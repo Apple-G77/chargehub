@@ -1,15 +1,3 @@
-"""
-storage.py - shared data and helper functions used by every ChargeHub page.
-
-Every page runs its own Python file, but they all import this one, so the
-Check-In page, the Live Slots page, the Logbook, etc. all read and write the
-same data. Data is saved in the browser's localStorage (see _get / _put).
-
-NOTE: localStorage lives inside ONE browser on ONE device. A check-in made on
-the operator's laptop shows up on that laptop's Live Slots page, but not on a
-student's phone. To share data between devices later, only _get and _put
-need to be replaced (for example with Firebase).
-"""
 import json
 from datetime import datetime, date, timedelta
 from html import escape as esc
