@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operator PIN | ChargeHub</title>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+<link rel="stylesheet" href="../css/style.css">
+<script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+</head>
+<body>
+<div class="w">
+
+<main>
+<section style="max-width:460px;margin:0 auto;padding:96px 0;display:flex;flex-direction:column;gap:20px;text-align:center"><img src="../assets/logo.png" width="120" height="120" alt="ChargeHub logo" style="align-self:center"><span class="p rd" style="align-self:center">OPERATOR ONLY</span><div class="c col" style="text-align:left"><div class="t" style="font-size:22px">Operator access</div><p class="m" style="margin:0">Enter the group PIN to open the operator pages.</p><label class="f" for="pin">PIN<input id="pin" type="password" inputmode="numeric" autocomplete="off"></label><button id="unlock" class="btn pr" type="button">Unlock</button><div id="pin-msg" class="m" role="alert"></div></div><a class="m" href="../home.html" style="text-decoration:underline">Back to the ChargeHub website</a></section>
+</main>
+
+</div>
+<script type="py" src="../py/pin.py"></script>
+</body>
+</html>
