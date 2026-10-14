@@ -22,6 +22,10 @@ def set_filter(event):
 
 
 render()
-while True:
-    await asyncio.sleep(30)
-    render()
+
+async def refresh_loop():
+    while True:
+        await asyncio.sleep(30)
+        render()
+
+asyncio.create_task(refresh_loop())
