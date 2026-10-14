@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Us | ChargeHub</title>
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+</head>
+<body>
+<div class="w">
+<header class="nav"><a class="lg t" href="home.html"><img src="assets/logo.png" width="40" height="40" alt="">CHARGEHUB</a><nav aria-label="Main"><a href="home.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="live-slots.html">Live Slots</a><a href="find-us.html" class="on" aria-current="page">Find Us</a></nav></header>
+<main>
+<h1 class="t">Where to find us</h1><p class="m" style="margin-bottom:28px">The team posts its location here during the day.</p><section><div id="status-card" class="c col">Loading...</div></section><section><h2>Schedule</h2><div class="c sc"><table><thead><tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Location</th><th scope="col">On duty</th></tr></thead><tbody id="schedule-body"><tr><td colspan="4">Loading...</td></tr></tbody></table></div></section><section><h2>Recent updates</h2><div id="history-list" class="c" style="line-height:2">Loading...</div></section>
+</main>
+<footer class="foot m">ChargeHub &middot; BSIT 3-7 &middot; Cebu Eastern College</footer>
+</div>
+<script type="py" src="py/find_us.py" config='{"files":{"py/storage.py":"./storage.py"}}'></script>
+</body>
+</html>
