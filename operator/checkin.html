@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check-in | ChargeHub</title>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+<link rel="stylesheet" href="../css/style.css">
+<script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+</head>
+    <body class="locked">
+    <div class="w">
+    <header class="nav"><div class="brand-row"><span class="lg t"><img src="../assets/logo.png" width="40" height="40" alt="">CHARGEHUB</span><span class="p rd">OPERATOR ONLY</span></div><nav aria-label="Operator"><a href="checkin.html" class="on" aria-current="page">Check-In</a><a href="logbook.html">Logbook</a><a href="schedule.html">Schedule</a><a href="earnings.html">Earnings</a><a id="lock" href="pin.html">Lock</a></nav></header>
+    <main>
+    <h1 class="t">Check-in and claim</h1><p id="next-slot" class="m" style="margin-bottom:28px">Loading...</p><section class="r"><div class="c col"><div class="t" style="font-size:22px">New check-in</div><label class="f" for="name">Student name<input id="name" type="text" placeholder="Full name"></label><label class="f" for="course">Course and year<input id="course" type="text" placeholder="BSIT 3"></label><label class="f" for="ptype">Phone type<select id="ptype"><option>Android</option><option>iPhone</option></select></label><label class="f" for="brand">Brand<input id="brand" type="text" placeholder="Samsung, Oppo, Vivo, Apple..."></label><label class="f" for="hours">Hours (1 to 12)<input id="hours" type="number" placeholder="" value="1"></label><label class="f" for="slot">Slot<select id="slot"></select></label><label class="f" for="note">Condition note<textarea id="note" placeholder="Scratches, cracks, case..."></textarea></label><button id="checkin" class="btn pr" type="button">Check in</button><div id="checkin-msg" class="msg" role="status" aria-live="polite"></div></div><div class="c col" style="align-self:flex-start"><div class="t" style="font-size:22px">Claim a phone</div><label class="f" for="claim-no">Claim number<input id="claim-no" type="text" placeholder="CH-0001"></label><label class="f" for="claimed-by">Claimed by<input id="claimed-by" type="text" placeholder="Name of the person"></label><button id="claim" class="btn pr" type="button">Mark as claimed</button><div id="claim-msg" class="msg" role="status" aria-live="polite"></div></div></section><section><h2>Waiting to be claimed</h2><div class="c sc"><table><thead><tr><th scope="col">Claim no.</th><th scope="col">Phone</th><th scope="col">Slot</th><th scope="col">Status</th><th scope="col">Ready at</th></tr></thead><tbody id="active-body"><tr><td colspan="5">Loading...</td></tr></tbody></table></div></section>
+    </main>
+    <footer class="foot m">Operator pages. Use Lock when you leave the station.</footer>
+    </div>
+    <script type="py" src="../py/checkin.py" config='{"files":{"../py/storage.py":"./storage.py"}}'></script>
+    </body>
+</html>
