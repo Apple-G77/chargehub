@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services | ChargeHub</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+</head>
+<body>
+<div class="w">
+    <header class="nav">
+        <a class="lg t" href="home.html">
+            <img src="assets/logo.png" width="40" height="40" alt="">
+            CHARGEHUB
+        </a>
+
+        <nav aria-label="Main">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="on" aria-current="page">Services</a>
+            <a href="live-slots.html">Live Slots</a>
+            <a href="find-us.html">Find Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="t">Services and pricing</h1>
+        <p class="lead" style="margin-bottom:32px">Two ways to charge. One simple price.</p>
+        <section>
+            <div class="g">
+                <div class="c">
+                    <div class="t green" style="font-size:22px">Wait &amp; Charge</div>
+                    <p style="margin:8px 0 0;color:#C9D8E6">
+                        Stay beside the station while your phone charges.
+                    </p>
+                </div>
+
+                <div class="c">
+                    <div class="t green" style="font-size:22px">Leave &amp; Claim</div>
+                    <p style="margin:8px 0 0;color:#C9D8E6">
+                        Drop it in a locked bag, get a claim number, pick it up
+                        later.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h2>What you get</h2>
+            <div class="g">
+                <div class="c"><b>Fast multi-port charging</b></div>
+                <div class="c"><b>Locked charging bag</b></div>
+                <div class="c"><b>Logbook record</b></div>
+                <div class="c"><b>Unique claim number</b></div>
+                <div class="c"><b>Phone condition check</b></div>
+                <div class="c"><b>Portable power, 8 slots</b></div>
+            </div>
+        </section>
+        <section class="r">
+            <div class="c col">
+                <div class="m">Price</div>
+                <div class="t green" style="font-size:48px">&#8369;5 <span class="m" style="font-size:16px">per hour, per gadget</span>
+                </div>
+                <p class="m" style="font-size:16px;margin:0">
+                    Charging time is rounded to whole hours.
+                </p>
+            </div>
+            <div class="c col">
+                <div class="t" style="font-size:22px">Price calculator</div>
+                <label class="f" for="gadgets">
+                    Gadgets (1 to 8)
+                    <input id="gadgets" type="number" placeholder="" value="1">
+                </label>
+
+                <label class="f" for="hours">
+                    Hours (1 to 12)
+                    <input id="hours" type="number" placeholder="" value="1">
+                </label>
+
+                <label class="f" for="mode">
+                    Mode
+                    <select id="mode">
+                        <option>Wait &amp; Charge</option>
+                        <option>Leave &amp; Claim</option>
+                    </select>
+                </label>
+
+                <button id="compute" class="btn pr" type="button">Compute</button>
+                <div id="result" class="msg" role="status" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot m">ChargeHub &middot; BSIT 3-7 &middot; Cebu Eastern College</footer>
+</div>
+<script type="py" src="py/services.py" config='{"files":{"py/storage.py":"./storage.py"}}'></script>
+</body>
+</html>

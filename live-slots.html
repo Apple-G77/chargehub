@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Slots | ChargeHub</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+</head>
+<body>
+<div class="w">
+    <header class="nav">
+        <a class="lg t" href="home.html">
+            <img src="assets/logo.png" width="40" height="40" alt="">
+            CHARGEHUB
+        </a>
+        <nav aria-label="Main">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="live-slots.html" class="on" aria-current="page">Live Slots</a>
+            <a href="find-us.html">Find Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="t">Live slots</h1>
+        <p class="m" style="margin-bottom:16px">
+            <span id="slots-count" aria-live="polite"></span> &middot;
+            <span id="updated"></span>
+        </p>
+        <div class="b" style="margin-bottom:24px">
+            <i id="slots-bar"></i>
+        </div>
+        <div class="row" style="margin-bottom:24px" role="group" aria-label="Filter slots">
+            <button class="btn pr filter" data-filter="all" type="button">All</button>
+            <button class="btn ol filter" data-filter="available" type="button">Available</button>
+            <button class="btn ol filter" data-filter="occupied" type="button">Occupied</button>
+            <button class="btn ol filter" data-filter="ready" type="button">Ready</button>
+        </div>
+        <div id="slots-grid" class="g" style="grid-template-columns:repeat(auto-fit,minmax(270px,1fr))">
+            Loading...
+        </div>
+        <p class="m" style="margin-top:24px">
+            Slot numbers match the numbered ports on the charging unit. This page
+            refreshes every 30 seconds.
+        </p>
+    </main>
+    <footer class="foot m">ChargeHub &middot; BSIT 3-7 &middot; Cebu Eastern College</footer>
+</div>
+<script type="py" src="py/live_slots.py" config='{"files":{"py/storage.py":"./storage.py"}}'></script>
+</body>
+</html>
