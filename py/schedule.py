@@ -45,12 +45,6 @@ def main():
             st.delete_schedule(item_id)
             render()
 
-    @when("click", "#s-sample")
-    def sample(event):
-        st.load_sample_schedule()
-        message("s-msg", "Sample schedule loaded.", True)
-        render()
-
     @when("click", "#lock")
     def do_lock(event):
         st.lock()
