@@ -4,7 +4,7 @@ A portable phone charging service for Cebu Eastern College students.
 
 **Members:** Garabiles, Apple Mae D. · Lazarte, Alliah E. · Oacan, Jomar I. · Rollon, Jhunro Niño F. · Villaluz, MaryShien R.
 
-Live site (after enabling GitHub Pages): `https://apple-g77.github.io/chargehub/`
+Live site: `https://apple-g77.github.io/chargehub/`
 
 
 ## What the website does
